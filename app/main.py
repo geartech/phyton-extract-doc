@@ -9,7 +9,7 @@ import shutil
 import tempfile
 from fastapi import FastAPI, UploadFile, File, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
-from app.parser import extract_docx
+from app.parser import extract_docx, to_markdown, md_to_text, to_html
 
 app = FastAPI(title="DOCX Extractor API")
 
